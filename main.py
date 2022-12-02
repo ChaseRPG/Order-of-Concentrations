@@ -12,8 +12,8 @@ if not a1 == a2 or not b1 == b2:
         exit(0)
 
 if a1 == a2:                         # check to see if [A] is constant
-    result = float(rate1 * (b2 / b1))      # calculations for multiple
-    result2 = float(rate1 * ((b2 / b1) * (b2 / b1)))            # for second order
+    result = round(float(rate1 * (b2 / b1)), 2)      # calculations for multiple
+    result2 = round(float(rate1 * ((b2 / b1) * (b2 / b1))), 2)            # for second order
 
     if result == rate2:
         print('[B] is First Order')
@@ -23,8 +23,8 @@ if a1 == a2:                         # check to see if [A] is constant
         print('ya messed up chief')
 
 if b1 == b2:                         # check to see if [B] is constant
-    result = float(rate1 * (a2 / a1))      # calculations for multiple
-    result2 = float(rate1 * ((a2 / a1) * (a2 / a1)))            # for second order
+    result = round(float(rate1 * (a2 / a1)), 2)      # calculations for multiple
+    result2 = round(float(rate1 * ((a2 / a1) * (a2 / a1))), 2)            # for second order
 
     if result == rate2:
         print('[A] is First Order')
